@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fashion Gallery - Aeffe Timeline</title>
+   
+
+  
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <script>
+        // Funzione che rileva la pressione del tasto "0" e reindirizza alla homepage
+        document.addEventListener('keydown', function(event) {
+            if (event.key === '0') {
+                window.location.href = 'index.html';
+            } else if (event.key === '1') {
+                window.location.href = '1980.html';
+            } else if (event.key === '2') {
+                window.location.href = '1990.html';
+            } else if (event.key === '3') {
+                window.location.href = '2000.html';
+            } else if (event.key === '4') {
+                window.location.href = '2010.html';
+            } else if (event.key === '5') {
+                window.location.href = '2020.html';
+            }
+        });
+    </script>
+  </head>
+<body>
+    <a-scene>
+     <a-box src="https://cdn.glitch.global/ed3c2e4f-fba2-49c4-bd3b-51ea1f46d94a/_%20(57).jpeg?v=1737132876785" position="0 0 0" depth="12" height="0.1" width="12" src="https://raw.githubusercontent.com/oluisjuan/LongCovid-Pilot/master/material/floor-texture.jpg"></a-box>
+     <!--Pared de fondo-->
+     <a-box position="0 1.5 -6" depth="0.1" height="3" width="12" src="https://cdn.glitch.global/0f3d98c0-1ce2-4c93-b7a2-279ef2da557c/_%20(31).jpeg?v=1736787088874"></a-box>
+      <!--Pared derecha-->
+      <a-box position="6 1.5 0" depth="12" height="3" width="0.1" src="https://cdn.glitch.global/0f3d98c0-1ce2-4c93-b7a2-279ef2da557c/Luca%20Creme%20Matt%20Porcelain%20Tile%20_%20Mandarin%20Stone.jpeg?v=1736786072347"></a-box>
+      <!--Pared izquierda-->
+      <a-box position="-6 1.5 0" depth="12" height="3" width="0.1" src="https://cdn.glitch.global/0f3d98c0-1ce2-4c93-b7a2-279ef2da557c/Luca%20Creme%20Matt%20Porcelain%20Tile%20_%20Mandarin%20Stone.jpeg?v=1736786072347"></a-box>
+      <!--Pared de atrás-->
+      <a-box position="0 1.5 6" depth="0.1" height="3" width="12" src="https://cdn.glitch.global/0f3d98c0-1ce2-4c93-b7a2-279ef2da557c/_%20(31).jpeg?v=1736787088874"></a-box>
+      <!--Techo-->
+      <a-box position="0 3 0" depth="12" height="0.1" width="12" color="black"></a-box>
+      <a-sky color="#ECECEC"></a-sky>
+      
+            
+      
+            <a-image src="https://cdn.glitch.global/7ff733a3-bedf-41a2-bbd3-b9acd0a1271b/_%20(51).jpeg?v=1737131010397" position="0 2.9 0" width="3" height="14.5" scale="0.8 0.8 0.8" rotation="-90 0 0" ></a-image>
+      
+      
+      <a-light intensity="0.35" type="point" color="#FFF" position="0 2.9 -3"></a-light>
+
+  <a-light type="point" color="#FFFFFF" position="0 2.8 0" intensity="2"></a-light>3
+
+
+        <a-light type="ambient" color="#FFFFFF"></a-light>
+        <a-sky color="#ECECEC"></a-sky>
+
+        <!-- Pavimento -->
+        <a-plane position="0 0 0" rotation="-90 0 0" width="20" height="20" color="#D3D3D3"></a-plane>
+      
+        <!-- Titolo centrale -->
+        <a-text value="Fashion Gallery - Aeffe Timeline" position="0 4 -5" align="center" color="black" width="6"></a-text>
+
+        <!-- Quadro 1 - Fondazione con Animazione e Audio -->
+        <a-plane position="-5 2 0" width="2" height="1.6" src="https://cdn.glitch.global/ed3c2e4f-fba2-49c4-bd3b-51ea1f46d94a/Logo_Pollini.png?v=1737546724173" material="shader:flat"
+            animation="property: rotation; to: 0 360 0; loop: true; dur: 10000"
+            sound="src: url(https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3); autoplay: true; loop: true"></a-plane>
+      
+        <a-text value="2001: Acquisition majority stake
+in Pollini S.p.A." rotation ="0 90 0" position="-5 0.7 0" color="black" align="center"></a-text>
+         
+        <!-- Quadro 2 - Prima Collezione con Animazione -->
+        <a-plane position="0 2 -5" width="2" height="1.6" src="https://cdn.glitch.global/ed3c2e4f-fba2-49c4-bd3b-51ea1f46d94a/velmar_s_p_a__logo.jpeg?v=1737543904648" material="shader:flat"
+            animation="property: scale; to: 1.2 1.2 1; loop: true; dir: alternate; dur: 3000"></a-plane>
+        <a-text value="2002: Acquisition of Velmar
+S.p.A." position="0 0.7 -5" color="white" align="center"></a-text>
+
+        <!-- Quadro 3 - Espansione Internazionale con Audio e Animazione di Rotazione -->
+        <a-plane src= "https://cdn.glitch.global/ed3c2e4f-fba2-49c4-bd3b-51ea1f46d94a/brunobassobassobrookerunwaylfwautumn_r5qxjko4zkl.jpg?v=1737543659815" position="5 2 0" width="2" height="1.6" src="https://via.placeholder.com/300" material="shader:flat"
+            animation="property: rotation; to: 0 360 0; loop: true; dur: 10000"
+            sound="src: url(https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3); autoplay: true; loop: true"></a-plane>
+        
+            
+        <a-text value="2004: Licensing agreement with
+Basso & Brooke" rotation ="0 -90 0" position="5 0.7 0" color="black" align="center"></a-text>
+      
+      
+      <!-- Quadro 4 - Fondazione con Animazione e Audio -->
+        <a-plane position="0 2 5.3" width="2" height="1.6" src="https://cdn.glitch.global/ed3c2e4f-fba2-49c4-bd3b-51ea1f46d94a/images%20(1).png?v=1737486290683" material="shader:flat"
+            animation="property: rotation; to: 0 360 0; loop: true; dur: 10000"
+            sound="src: url(https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3); autoplay: true; loop: true"></a-plane>
+      
+        <a-text value="2005: Licensing agreement with
+Authier" rotation ="0 180 0" position="0 0.7 5.3" color="white" align="center"></a-text>
+         
+ 
+
+      
+      
+      
+      
+      
+      
+ https://cdn.glitch.global/ed3c2e4f-fba2-49c4-bd3b-51ea1f46d94a/golden_glass_round_table.glb?v=1737046412325
+      
+<a-entity gltf-model="https://cdn.glitch.global/ed3c2e4f-fba2-49c4-bd3b-51ea1f46d94a/glass_table.glb?v=1737110305595" position ="-1.5 1 -1.4" scale="0.5 0.5 0.5" rotation="0 300 0"></a-entity>
+      
+<a-entity gltf-model="https://cdn.glitch.global/ed3c2e4f-fba2-49c4-bd3b-51ea1f46d94a/dorsay_high_heels.glb?v=1737049212075" position ="-1.5 1.56 -1.4" scale="1.5 1.5 1.5" rotation="0 300 0"></a-entity>
+      
+<a-entity gltf-model="https://cdn.glitch.global/ed3c2e4f-fba2-49c4-bd3b-51ea1f46d94a/swimsuit_pink.glb?v=1737111019447" position ="3 -0.8 -3.1" scale="1.7 1.7 1.7" rotation="0 128 0"></a-entity>
+      
+
+
+<a-entity gltf-model="https://cdn.glitch.global/7ff733a3-bedf-41a2-bbd3-b9acd0a1271b/8_fashion_woman_highheel_package_2.glb?v=1737127421440" position ="-5.2 0.1 3" rotation= "0 90 0" scale="4.5 4.5 4.5"></a-entity>
+      
+      
+       
+
+ <a-entity gltf-model="https://cdn.glitch.global/ed3c2e4f-fba2-49c4-bd3b-51ea1f46d94a/low-poly_freeride_skis.glb?v=1737544340138" position ="-3 0.1 5.7" rotation= "-10 180 0" scale="0.7 0.7 0.7"></a-entity>
+      
+      
+<a-entity gltf-model="https://cdn.glitch.global/ed3c2e4f-fba2-49c4-bd3b-51ea1f46d94a/bomber_jacket%20(1).glb?v=1737545024588" position ="5 -1.7 5.2" rotation= "0 220 0" scale="2.8 2.8 2.8"></a-entity>
+      
+    
+ <a-entity gltf-model="https://cdn.glitch.global/ed3c2e4f-fba2-49c4-bd3b-51ea1f46d94a/dress_colorfull%20(1).glb?v=1737547649389" position ="0 0 0" scale="1 1 1" rotation="0 0 0"></a-entity>
+      
+         
+      
+      
+      
+        <!-- Navigazione Virtuale -->
+        <a-camera>
+            <a-cursor></a-cursor>
+        </a-camera>
+    </a-scene>
+</body>
+</html>

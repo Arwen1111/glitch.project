@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AEFFE Timeline 3D</title>
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <script>
+        document.addEventListener('keydown', function(event) {
+            if (event.key === '0') {
+                window.location.href = 'index.html';
+            } else if (event.key === '1') {
+                window.location.href = '1980.html';
+            } else if (event.key === '2') {
+                window.location.href = '1990.html';
+            } else if (event.key === '3') {
+                window.location.href = '2000.html';
+            } else if (event.key === '4') {
+                window.location.href = '2010.html';
+            } else if (event.key === '5') {
+                window.location.href = '2020.html';
+            }
+        });0
+    </script>
+</head>
+<body>
+    <a-scene>
+        <!-- Video background -->
+        <a-video src="https://cdn.glitch.me/ed3c2e4f-fba2-49c4-bd3b-51ea1f46d94a/videoplayback.mp4?v=1736954603934" position="0 0 -10" rotation="0 0 0 " width="50" height="30"></a-video>
+
+      
+      
+      
+       <a-scene>
+      <!-- Aggiungi il cielo con immagine a 360° -->
+      <a-sky color="white"></a-sky>
+    </a-scene>
+      
+      
+      
+      
+      
+        <!-- Home Scene Content -->
+        <a-box position="0 1.5 -5" color="blue"></a-box>
+        <a-text value="Benvenuto nella Timeline di AEFFE! Premi 0 per tornare alla Home, 1-5 per navigare" color="White" position="-2 3 -2"></a-text>
+
+    
+   
+        <!-- Portali opzionali con a-link -->
+        <a-link position="-6 1.5 -4" href="1980.html" title="1980"></a-link>
+        <a-image src ="https://cdn.glitch.global/ed3c2e4f-fba2-49c4-bd3b-51ea1f46d94a/AEFFE-logo.png?v=1736966033005" scale="0.6 0.6" position="-6 1.5 -4" width="4" height="2"></a-image>
+        <a-link position="-3 1.5 -4" href="1990.html" title="1990"></a-link>
+       <a-image src ="https://cdn.glitch.global/ed3c2e4f-fba2-49c4-bd3b-51ea1f46d94a/AEFFE-logo.png?v=1736966033005" scale="0.6 0.6" position="-3 1.5 -4" width="4" height="2"></a-image>
+        <a-image src ="https://cdn.glitch.global/ed3c2e4f-fba2-49c4-bd3b-51ea1f46d94a/AEFFE-logo.png?v=1736966033005" scale="0.6 0.6" position="-6 1.5 -4" width="4" height="2"></a-image>
+        <a-link position="0 1.5 -4" href="2000.html" title="2000"></a-link>
+        <a-image src ="https://cdn.glitch.global/ed3c2e4f-fba2-49c4-bd3b-51ea1f46d94a/AEFFE-logo.png?v=1736966033005" scale="0.6 0.6" position="0 1.5 -4" width="4" height="2"></a-image>
+      
+        <a-link position="3 1.5 -4" href="2010.html" title="2010"></a-link>
+      <a-image src ="https://cdn.glitch.global/ed3c2e4f-fba2-49c4-bd3b-51ea1f46d94a/AEFFE-logo.png?v=1736966033005" scale="0.6 0.6" position="3 1.5 -4" width="4" height="2"></a-image>
+        <a-link position="6 1.5 -4" href="2020.html" title="2020"></a-link>
+  <a-image src ="https://cdn.glitch.global/ed3c2e4f-fba2-49c4-bd3b-51ea1f46d94a/AEFFE-logo.png?v=1736966033005" scale="0.6 0.6" position="6 1.5 -4" width="4" height="2"></a-image>
+  </a-scene>
+</body>
+</html>

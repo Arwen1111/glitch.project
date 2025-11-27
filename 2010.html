@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fashion Gallery - Aeffe Timeline</title>
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <script>
+        // Funzione che rileva la pressione del tasto "0" e reindirizza alla homepage
+        document.addEventListener('keydown', function(event) {
+             if (event.key === '0') {
+                window.location.href = 'index.html';
+            } else if (event.key === '1') {
+                window.location.href = '1980.html';
+            } else if (event.key === '2') {
+                window.location.href = '1990.html';
+            } else if (event.key === '3') {
+                window.location.href = '2000.html';
+            } else if (event.key === '4') {
+                window.location.href = '2010.html';
+            } else if (event.key === '5') {
+                window.location.href = '2020.html';
+            }
+        });
+    </script>
+</head>
+<body>
+    <a-scene>
+        <a-box color="black" position="0 0 0" depth="12" height="0.1" width="12" src="https://raw.githubusercontent.com/oluisjuan/LongCovid-Pilot/master/material/floor-texture.jpg"></a-box>
+     <a-video src="https://cdn.glitch.me/ed3c2e4f-fba2-49c4-bd3b-51ea1f46d94a/videoplayback%20(1).mp4?v=1736974979809" position="0 0.1 0" rotation="-90 0 0"  width="5"  height="4.5" scale ="0.5 0.5" autoplay="true"loop="true"></a-video>
+      
+      
+      
+      
+     <a-box position="0 1.5 -6" depth="0.1" height="3" width="12" src="https://cdn.glitch.global/ed3c2e4f-fba2-49c4-bd3b-51ea1f46d94a/_%20(81).jpeg?v=1738600265381"></a-box>
+      <!--Pared derecha-->
+      <a-box position="6 1.5 0" depth="12" height="3" width="0.1" src="https://cdn.glitch.global/ed3c2e4f-fba2-49c4-bd3b-51ea1f46d94a/_%20(81).jpeg?v=1738600265381"></a-box>
+      <!--Pared izquierda-->
+      <a-box position="-6 1.5 0" depth="12" height="3" width="0.1" src="https://cdn.glitch.global/ed3c2e4f-fba2-49c4-bd3b-51ea1f46d94a/_%20(81).jpeg?v=1738600265381"></a-box>
+      <!--Pared de atrás-->
+      <a-box position="0 1.5 6" depth="0.1" height="3" width="12" src="https://cdn.glitch.global/ed3c2e4f-fba2-49c4-bd3b-51ea1f46d94a/_%20(81).jpeg?v=1738600265381"></a-box>
+      <!--Techo-->
+      <a-box position="0 3 0" depth="12" height="0.1" width="12" color="black"></a-box>
+      <a-sky color="#ECECEC"></a-sky>
+   
+
+  
+      <a-light type="point" color="#FFFFFF" position="1 2.8 -1" intensity="0.05"></a-light>
+      <a-light type="point" color="#FFFFFF" position="-1 2.8 -1" intensity="0.1"></a-light>
+      <a-light type="point" color="#FFFFFF" position="1 2.8 1" intensity="0.05"></a-light>
+      <a-light type="point" color="#FFFFFF" position="-1 2.8 1" intensity="0.05"></a-light>
+      
+      
+
+
+        <a-light type="ambient" color="#FFFFFF"></a-light>
+        <a-sky color="#ECECEC"></a-sky>
+
+        <!-- Pavimento -->
+        <a-plane position="0 0 0" rotation="-90 0 0" width="20" height="20" color="#D3D3D3"></a-plane>
+      
+        <!-- Titolo centrale -->
+        <a-text value="Fashion Gallery - Aeffe Timeline" position="0 4 -5" align="center" color="black" width="6"></a-text>
+
+     
+      
+        <!-- Quadro 2 - Prima Collezione con Animazione -->
+        <a-plane position="5.8 1.7 0" scale="0.8 0.8" width="2.7" height="1.6" src="https://cdn.glitch.global/3d6b4b99-ae4b-4909-9025-73ddbf1c1af6/768x384-16725966-1-ita-it-lorenzo-serafini-e-il-nuovo-direttore-creativo-della-linea-philosophy-di-aeffe-jpg.avif?v=1739050846324" rotation="0 -90 0" material="shader:flat"
+></a-plane>
+        <a-text value="2015: Lorenzo Serafini is appointed as
+                       creative director of Philosophy" rotation="0 -90 0" position="5.8 0.7 0" scale="0.6 0.6" color="black" align="center"></a-text>
+
+        
+   
+        <a-entity gltf-model="https://cdn.glitch.global/ed3c2e4f-fba2-49c4-bd3b-51ea1f46d94a/tv_table.glb?v=1737373270857" position ="-1 0.1 1.5" scale="0.62 0.62 0.62" rotation="0 -270 0"></a-entity>
+       <a-text value="2013: MOSCHINO 
+                     SS 2014 
+                     fashion show
+                     celebrates
+                     the 30th anniversary 
+                     of the brand" rotation ="0 180 0" position="3.5 1.5 5.3" scale="0.8 0.8" color="black" align="center"></a-text>
+         
+      
+      
+      
+      
+      <a-video src="https://cdn.glitch.me/ed3c2e4f-fba2-49c4-bd3b-51ea1f46d94a/videoplayback%20(5).mp4?v=1737376374194" position="0.57 1.8 3.5" rotation="0 -180 0"  width="3.7"  height="1.9" scale ="0.52 0.52" autoplay="true"loop="true"></a-video>
+      
+      
+      <a-entity gltf-model="https://cdn.glitch.global/ed3c2e4f-fba2-49c4-bd3b-51ea1f46d94a/cowboy_hat.glb?v=1737630805773" position ="-1.15 1.69 3.65" scale="0.18 0.18 0.18" rotation="0 90 0"></a-entity>
+      
+      
+  <a-entity gltf-model="https://cdn.glitch.global/ed3c2e4f-fba2-49c4-bd3b-51ea1f46d94a/chmil_mannequin_bust_2024.glb?v=1737631958673" position ="-1.5 1.2 4.8" scale="1.4 1.4 1.4" rotation="0 -180 0"></a-entity>
+      
+ 
+      
+      <a-entity gltf-model="https://cdn.glitch.global/ed3c2e4f-fba2-49c4-bd3b-51ea1f46d94a/pink_dress.glb?v=1737455465385" position ="-2 1 -1.3" scale="5 5 5" rotation="0 90 0"></a-entity>
+  
+      
+      
+      
+      <a-entity gltf-model="https://cdn.glitch.global/ed3c2e4f-fba2-49c4-bd3b-51ea1f46d94a/wall_shelf.glb?v=1737457034607" position ="-5.9 0.4 1.6" rotation= "0 90 0" scale="4.5 4.5 4.5"></a-entity>
+      
+      
+      <a-entity gltf-model="https://cdn.glitch.global/ed3c2e4f-fba2-49c4-bd3b-51ea1f46d94a/mcdonalds.glb?v=1737457389932" position ="-5.9 0.65 1.45" rotation= "0 85 0" scale="0.42 0.42 0.42"></a-entity>
+      <a-entity gltf-model="https://cdn.glitch.global/ed3c2e4f-fba2-49c4-bd3b-51ea1f46d94a/barbie_logo_3d.glb?v=1737457378810" position ="-5.9 1.3 -1.3" rotation= "90 85 0" scale="2 2 2"></a-entity>
+      
+
+      
+     <a-entity gltf-model="https://cdn.glitch.global/6781e8d6-6e51-4b12-8a45-29bc4d90a3fb/nasb2_-_spongebob.glb?v=1738951071312" position ="-5.8 1 0.4" rotation= "0 90 0" scale="0.6 0.6 0.6"></a-entity>
+      
+      <a-entity gltf-model="https://cdn.glitch.global/ed3c2e4f-fba2-49c4-bd3b-51ea1f46d94a/beach_barbie.glb?v=1737459603293" position ="-5.8 1.6 -0.5" rotation= "0 90 0" scale="0.5 0.5 0.5"></a-entity>
+      
+      <a-entity gltf-model="https://cdn.glitch.global/6781e8d6-6e51-4b12-8a45-29bc4d90a3fb/colorful_pastels.glb?v=1738949416347" position ="-5.8 1.73 1.7" rotation= "0 90 0" scale="0.0013 0.0013 0.0013"></a-entity>
+      
+      
+      
+      
+      
+              <!-- Quadro 1 - Fondazione con Animazione e Audio -->
+        <a-image position="-4 1.7 2.9" width="2" height="1.6" src="https://cdn.glitch.global/ed3c2e4f-fba2-49c4-bd3b-51ea1f46d94a/scott1.webp?v=1737461237817" scale="0.9 0.65" rotation="0 90 0"></a-image>
+      
+        <a-text value="2014:Jeremy Scott is appointed 
+                       as creative director of Moschino" rotation ="0 90 0" position="-5 0.7 3.5" color="black" align="center" scale="0.7 0.7"></a-text>
+         
+      
+      
+      
+      <a-entity gltf-model="https://cdn.glitch.global/ed3c2e4f-fba2-49c4-bd3b-51ea1f46d94a/tv_screen.glb?v=1737556337722" position ="5.8 2 -4" rotation="0 -90 0" scale="0.025 0.025 0.025" ></a-entity>
+    
+     <a-entity gltf-model="https://cdn.glitch.global/ed3c2e4f-fba2-49c4-bd3b-51ea1f46d94a/tv_screen.glb?v=1737556337722" position ="5.8 1.3 -2.2" rotation="0 -90 0" scale="0.025 0.025 0.025" ></a-entity>
+    
+     <a-entity gltf-model="https://cdn.glitch.global/ed3c2e4f-fba2-49c4-bd3b-51ea1f46d94a/tv_screen.glb?v=1737556337722" position ="5.8 1.3 2.2" rotation="0 -90 0" scale="0.025 0.025 0.025" ></a-entity>
+    
+     <a-entity gltf-model="https://cdn.glitch.global/ed3c2e4f-fba2-49c4-bd3b-51ea1f46d94a/tv_screen.glb?v=1737556337722" position ="5.8 2 4" rotation="0 -90 0" scale="0.025 0.025 0.025" ></a-entity>
+    
+     <!- Philosophy di Lorenzo Serafini | Fall Winter 2015/2016 | Full Show>
+      <a-video src="https://cdn.glitch.me/ed3c2e4f-fba2-49c4-bd3b-51ea1f46d94a/videoplayback%20(9).mp4?v=1737557871957" position="5.7 2 -3.94" rotation="0 -90 0"  width="2.7"  height="1.6" scale ="0.5 0.5" autoplay="true"loop="true"></a-video>
+      <a-text value="Fall Winter 2015/2016" position="5.7 1.3 -4.5" rotation="0 -90 0" color="black" scale="0.5 0.5"></a-text>
+      
+      <!-Philosophy di Lorenzo Serafini | Fall Winter 2021/2022 | Full Show>
+      <a-video src="https://cdn.glitch.me/ed3c2e4f-fba2-49c4-bd3b-51ea1f46d94a/videoplayback%20(12).mp4?v=1737558604960" position="5.7 1.3 -2.17" rotation="0 -90 0"  width="2.7"  height="1.6" scale ="0.5 0.5" autoplay="true"loop="true"></a-video>
+      <a-text value="Fall Winter 2021/2022" position="5.7 2 -2.8" rotation="0 -90 0" color="black" scale="0.5 0.5"></a-text>
+      
+      
+      
+      <!Philosophy di Lorenzo Serafini | Fall Winter 2023/2024 | Full Show>
+      <a-video src="https://cdn.glitch.me/ed3c2e4f-fba2-49c4-bd3b-51ea1f46d94a/videoplayback%20(11).mp4?v=1737558621909" position="5.7 1.3 2.17" rotation="0 -90 0"  width="2.7"  height="1.6" scale ="0.5 0.5" autoplay="true"loop="true"></a-video>
+      <a-text value="Fall Winter 2023/2024" position="5.7 2 1.6" rotation="0 -90 0" color="black" scale="0.5 0.5"></a-text>
+      
+      
+      
+      <!Philosophy di Lorenzo Serafini | Spring Summer 2025 | Full Show>
+      <a-video src="https://cdn.glitch.me/ed3c2e4f-fba2-49c4-bd3b-51ea1f46d94a/videoplayback%20(10).mp4?v=1737558392840" position="5.7 2 3.94" rotation="0 -90 0"  width="2.7"  height="1.6" scale ="0.5 0.5" autoplay="true"loop="true"></a-video>
+      <a-text value="Spring Summer 2025" position="5.7 1.3 3.4" rotation="0 -90 0" color="black" scale="0.5 0.5"></a-text>
+      
+      
+      
+       <a-entity gltf-model="https://cdn.glitch.global/ed3c2e4f-fba2-49c4-bd3b-51ea1f46d94a/butterfly_-_wael_tsar.glb?v=1738587808402" position ="-0.2 1.3 -3" rotation= "80 0 0" scale="0.008 0.008 0.008"></a-entity>
+      
+       <a-entity gltf-model="https://cdn.glitch.global/ed3c2e4f-fba2-49c4-bd3b-51ea1f46d94a/butterfly.glb?v=1738588276916" position ="-0.6 2.3 -3" rotation= "90 0 0" scale="0.6 0.6 0.6"></a-entity>
+      
+      
+       <a-image position="-2.7 2 -5" width="2" height="1.6" src="https://cdn.glitch.global/ed3c2e4f-fba2-49c4-bd3b-51ea1f46d94a/800070216391-2.jpg?v=1738589687568" scale="0.8 0.8"></a-image>
+        <a-text value="2016: Pollini launches Heritage
+                       collection" position="-2.7 0.7 -5" color="black" align="center"></a-text>
+
+              
+       <a-image position="1 1.5 -5" width="2" height="1.6" src="https://cdn.glitch.global/ed3c2e4f-fba2-49c4-bd3b-51ea1f46d94a/images%20(1).jpeg?v=1738598060173" scale="0.6 0.9"></a-image>
+       
+      <a-text value="2018: Alberta-Ferretti received the American Award during a ceremony at the Chamber of Deputies in Rome
+                     
+                     
+                     2019: Alberta Ferretti has collaborated with  Eco-Age in celebration of Earth Day to present the Love Me Collection" position="3.2 1.5 -5" scale="0.6 0.6" color="black" align="center"></a-text>
+
+      
+      
+            
+       <a-entity gltf-model="https://cdn.glitch.global/ed3c2e4f-fba2-49c4-bd3b-51ea1f46d94a/butterfly_-_wael_tsar.glb?v=1738587808402" position ="-0.3 2.8 -0.3" rotation= "180 90 0" scale="0.007 0.007 0.007"></a-entity>
+      
+       <a-entity gltf-model="https://cdn.glitch.global/ed3c2e4f-fba2-49c4-bd3b-51ea1f46d94a/butterfly.glb?v=1738588276916" position ="-0.4 2.8 -0.8" rotation= "180 90 0" scale="0.7 0.7 0.7"></a-entity>
+      
+      
+      <a-image position="0.3 2.8 -0.3" width="2" height="1.6" src="https://cdn.glitch.global/ed3c2e4f-fba2-49c4-bd3b-51ea1f46d94a/AlbertaFerretti_LoveMe%20(6).webp?v=1738669373136" scale="0.2 0.4" rotation="90 0 0"></a-image>
+       <a-image position="-0.3 2.8 0.3" width="2" height="1.6" src="https://cdn.glitch.global/ed3c2e4f-fba2-49c4-bd3b-51ea1f46d94a/AlbertaFerretti_LoveMe%20(9).webp?v=17386693800374" rotation= "90 0 0"scale="0.2 0.4"></a-image>
+       
+      
+      
+        <!-- Navigazione Virtuale -->
+        <a-camera>
+            <a-cursor></a-cursor>
+        </a-camera>
+    </a-scene>
+</body>
+</html>
+
+
+

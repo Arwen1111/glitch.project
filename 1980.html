@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fashion Gallery - Aeffe Timeline</title>
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <script>
+        // Funzione che rileva la pressione del tasto "0" e reindirizza alla homepage
+        document.addEventListener('keydown', function(event) {
+ if (event.key === '0') {
+                window.location.href = 'index.html';
+            } else if (event.key === '1') {
+                window.location.href = '1980.html';
+            } else if (event.key === '2') {
+                window.location.href = '1990.html';
+            } else if (event.key === '3') {
+                window.location.href = '2000.html';
+            } else if (event.key === '4') {
+                window.location.href = '2010.html';
+            } else if (event.key === '5') {
+                window.location.href = '2020.html';
+            }
+        });
+    </script>
+</head>
+<body>
+    <a-scene>
+         <a-box src="https://cdn.glitch.global/0f3d98c0-1ce2-4c93-b7a2-279ef2da557c/_%20(31).jpeg?v=1736787088874" position="0 0 0" depth="12" height="0.1" width="12" src="https://raw.githubusercontent.com/oluisjuan/LongCovid-Pilot/master/material/floor-texture.jpg"></a-box>
+     
+      <a-image src="https://cdn.glitch.global/ed3c2e4f-fba2-49c4-bd3b-51ea1f46d94a/GardeRobe%20Second-Hand.jpeg?v=1737376068771" position="0 0.1 0" width="2.67" height="2.67" scale="0.5 0.5 0.5" rotation="-90 0 0" ></a-image>
+      
+      
+      
+      <!--Pared de fondo-->
+     <a-box position="0 1.5 -6" depth="0.1" height="3" width="12" src="https://cdn.glitch.global/0f3d98c0-1ce2-4c93-b7a2-279ef2da557c/Luca%20Creme%20Matt%20Porcelain%20Tile%20_%20Mandarin%20Stone.jpeg?v=1736786072347"></a-box>
+      <!--Pared derecha-->
+      <a-box position="6 1.5 0" depth="12" height="3" width="0.1" src="https://cdn.glitch.global/0f3d98c0-1ce2-4c93-b7a2-279ef2da557c/Luca%20Creme%20Matt%20Porcelain%20Tile%20_%20Mandarin%20Stone.jpeg?v=1736786072347"></a-box>
+      <!--Pared izquierda-->
+      <a-box position="-6 1.5 0" depth="12" height="3" width="0.1" src="https://cdn.glitch.global/0f3d98c0-1ce2-4c93-b7a2-279ef2da557c/Luca%20Creme%20Matt%20Porcelain%20Tile%20_%20Mandarin%20Stone.jpeg?v=1736786072347"></a-box>
+      <!--Pared de atrás-->
+      <a-box position="0 1.5 6" depth="0.1" height="3" width="12" src="https://cdn.glitch.global/0f3d98c0-1ce2-4c93-b7a2-279ef2da557c/Luca%20Creme%20Matt%20Porcelain%20Tile%20_%20Mandarin%20Stone.jpeg?v=1736786072347"></a-box>
+      <!--Techo-->
+      <a-box position="0 3 0" depth="12" height="0.1" width="12" color="black"></a-box>
+      
+            <a-image src="https://cdn.glitch.global/ed3c2e4f-fba2-49c4-bd3b-51ea1f46d94a/_%20(58).jpeg?v=1737376858581" position="0 2.9 0" width="6.5" height="5" scale="0.1 0.08" rotation="90 0 0" ></a-image>
+      
+      
+ <a-light type="point" color="#FFFFFF" position="1 2.8 -1" intensity="0.5"></a-light>
+<a-light type="point" color="#FFFFFF" position="-1 2.8 -1" intensity="0.5"></a-light>
+<a-light type="point" color="#FFFFFF" position="1 2.8 1" intensity="0.5"></a-light>
+<a-light type="point" color="#FFFFFF" position="-1 2.8 1" intensity="0.5"></a-light>
+      
+      
+      <a-sky color="#ECECEC"></a-sky>
+      
+      
+
+
+        <a-light type="ambient" color="#FFFFFF"></a-light>
+        <a-sky color="#ECECEC"></a-sky>
+
+        <!-- Pavimento -->
+        <a-plane position="0 0 0" rotation="-90 0 0" width="20" height="20" color="#D3D3D3"></a-plane>
+      
+        <!-- Titolo centrale -->
+        <a-text value="Fashion Gallery - Aeffe Timeline" position="0 4 -5" align="center" color="black" width="6"></a-text>
+
+        <!-- Quadro 1 - Fondazione con Animazione e Audio -->
+        <a-plane position="-4 2 1.2" width="2" height="1.6" scale="0.7 0.7 " src="https://cdn.glitch.global/c2c41e1c-b7c3-4f2c-98a6-437715105a53/download%20(1).png?v=1736621970659" material="shader:flat"
+            animation="property: rotation; to: 0 360 0; loop: true; dur: 10000"
+            sound="src: url(https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3); autoplay: true; loop: true"></a-plane>
+      
+        <a-text value="1980: Aeffe S.p.A. is founded" position="-5 0.7 1.5" color="black" align="center" rotation ="0 90 0"></a-text>
+         
+      <!-- Quadro 2- Fondazione con Animazione e Audio -->
+      
+       <a-plane position="-4 2 -2.1" width="2" height="1.6" scale="0.7 0.7 " src="https://cdn.glitch.global/0f3d98c0-1ce2-4c93-b7a2-279ef2da557c/Franco%2520Moschino%2520Ph%2520Stefano%2520Pandini%2520(4).webp?v=1736775298360" material="shader:flat"
+            animation="property: rotation; to: 0 360 0; loop: true; dur: 10000"
+            sound="src: url(https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3); autoplay: true; loop: true"></a-plane>
+      
+        <a-text value="1983: Alliance with Franco
+Moschino begins" position="-5 0.7 -2.7" color="black" align="center" rotation ="0 90 0"></a-text>
+         
+      
+      
+      
+      
+      
+      
+      
+        <!-- Quadro 3 - Prima Collezione con Animazione -->
+        <a-plane position="0 2 -5" width="1.6" height="1.6" src="https://cdn.glitch.global/ed3c2e4f-fba2-49c4-bd3b-51ea1f46d94a/pat-cleveland-moschino-GettyImages-1429349945.jpeg?v=1737723211447" material="shader:flat"
+            animation="property: scale; to: 1.2 1.2 1; loop: true; dir: alternate; dur: 3000"></a-plane>
+        <a-text value="1986: Pat Cleveland walks the runway for Moschino dressed as the Statue of Liberty" position="0 0.7 -5" color="black" align="center"></a-text>
+
+        <!-- Quadro 4 - Espansione Internazionale con Audio e Animazione di Rotazione -->
+        <a-plane src= "https://cdn.glitch.global/ed3c2e4f-fba2-49c4-bd3b-51ea1f46d94a/Philosophy%20by%20Alberta%20Ferretti%20Fall-Winter%201997_98%20_%20Photo_%20Paolo%20Roversi%20_%20%E5%B0%8F%E5%AE%AE%E5%B1%B1%E6%9B%B8%E5%BA%97%20KOMIYAMA%20TOKYO%20_%20%E7%A5%9E%E4%BF%9D%E7%94%BA%20%E5%8F%A4%E6%9B%B8%E3%83%BB%E7%BE%8E%E8%A1%93%E4%BD%9C%E5%93%81%E3%81%AE%E8%B2%A9%E5%A3%B2%E3%80%81%E8%B2%B7%E5%8F%96.jpeg?v=1737395253044" position="5 2 0" width="2" height="1.6" src="https://via.placeholder.com/300" material="shader:flat"
+            animation="property: rotation; to: 0 360 0; loop: true; dur: 10000"
+            sound="src: url(https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3); autoplay: true; loop: true"></a-plane>
+        <a-text value="1984: PHILOSOPHY di Alberta Ferretti is launched" rotation="0 -90 0" position="5 0.7 0" color="black" align="center"></a-text>
+
+       <!-- Quadro 5 - Fondazione con Animazione e Audio -->
+        <a-plane position="0 2 5.3" width="2" height="1.6" src="https://cdn.glitch.global/0f3d98c0-1ce2-4c93-b7a2-279ef2da557c/Alberta-Ferretti-flagship-store-by-Sybarite-Milan-05.jpg?v=1736775121982" material="shader:flat"
+            animation="property: rotation; to: 0 360 0; loop: true; dur: 10000"
+            sound="src: url(https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3); autoplay: true; loop: true"></a-plane>
+      
+        <a-text value="1985:Opening of the first Alberta
+Ferretti boutique in Milan" rotation ="0 180 0" position="0 0.7 5.3" color="black" align="center"></a-text>
+   
+      <!--IL MANICHINO CON IL VESTITO ROSSO-->     
+  <a-entity gltf-model="https://cdn.glitch.global/ed3c2e4f-fba2-49c4-bd3b-51ea1f46d94a/store_mannequin.glb?v=1737110572629" position ="-1.4 1 1.22" scale="0.8 0.8 0.8" rotation="0 307 0"></a-entity>
+  <a-entity gltf-model="https://cdn.glitch.global/ed3c2e4f-fba2-49c4-bd3b-51ea1f46d94a/evening_red_dress.glb?v=1737398412101" position ="-1.33 0.765 1.17" scale="0.8 0.8 0.8" rotation="-1.1 -236 0"></a-entity>
+  
+      <!-L'ALTRO VESTITO>
+     <a-entity gltf-model="https://cdn.glitch.global/ed3c2e4f-fba2-49c4-bd3b-51ea1f46d94a/fancy_dress.glb?v=1737396272219" position ="1.1 1 1" scale="0.65 0.65 0.65" rotation="0 -140 0"></a-entity>
+
+      <!STATUE OF LIBERTY>
+     
+      <a-entity gltf-model="https://cdn.glitch.global/ed3c2e4f-fba2-49c4-bd3b-51ea1f46d94a/statue_of_liberty%20(2).glb?v=1737722630121" position ="-3 0.2 -3.7" scale="0.04 0.04 0.04" rotation="0 45 0"></a-entity>
+
+     
+ 
+     
+      <!THE PAINTING>
+      <a-video src="https://cdn.glitch.global/ed3c2e4f-fba2-49c4-bd3b-51ea1f46d94a/videoplayback%20(8).mp4?v=1737408705626" position="2.99 1.48 -3" rotation="346 290 0"  width="3"  height="1.8" scale ="0.5 0.5" autoplay="true"loop="true"></a-video>
+      <a-entity 
+            gltf-model="https://cdn.glitch.global/ed3c2e4f-fba2-49c4-bd3b-51ea1f46d94a/pintura__painting.glb?v=1737022619657"
+           rotation="0 200 0"
+           position="3 0.2 -3"
+            scale="1 1 1"
+           >
+        </a-entity>
+
+      
+      <a-entity gltf-model="https://cdn.glitch.global/ed3c2e4f-fba2-49c4-bd3b-51ea1f46d94a/math_info_stand.glb?v=1737452999864" position ="2.6 0.1 -1.9" scale="0.8 0.8 0.8" rotation="0 110 0"></a-entity>
+      
+      <a-text value="MOSCHINO
+                     SS1988
+                     women
+                     fashion 
+                     show" position="2.58 0.79 -1.89" scale="0.28 0.28 0.28" color="black" align="center" rotation="-25 -65 0"></a-text>
+
+      
+      
+        <!-- Navigazione Virtuale -->
+        <a-camera>
+            <a-cursor></a-cursor>
+        </a-camera>
+    </a-scene>
+</body>
+</html>
+
+
+
